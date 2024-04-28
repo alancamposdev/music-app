@@ -16,7 +16,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
   <!-- css -->
-  <link rel="stylesheet" href="/src/styles/main.css" />
+  <link rel="stylesheet" href="src/styles/main.css" />
   <!-- js -->
   <script src="/src/scripts/main.js" defer></script>
 </head>
@@ -38,39 +38,47 @@
 
     <main class="main">
       <section>
-        <div>
-          
+
+        <!-- seção de apresentação -->      
+        <div class="info-container">
           <h2>Seja bem-vindo ao MusicApp</h2>
           <p>Um aplicativo de música online</p>
         </div>
+        
+        <!-- seção do player -->
         <div class="player-container">
           <div class="player">
-            <img src="/src/images/" alt="rock" />
+            <img src="src/images/rock.jpg" alt="rock" />
+         
             <div>
               <h3>Nome da música</h3>
               <p>Nome do artista</p>
-              <div class="duracao">
-                <div class="barra">
-                  <progress value="0.5" max="1"></progress>
-                  <span class="ponto"></span>
-                </div>
-                <div class="tempo">
-                  <span class="inicio">00:00</span>
-                  <span class="fim">03:00</span>
-                </div>
-              </div>
-              <div class="botoes">
-                <button class=""><i class="fas fa-step-backward"></i></button>
-                <button class=""><i class="fas fa-circle-play"></i></button>
-                <button class=""><i class="fas fa-step-forward"></i></button>
-              </div>
-              <audio src="/src/songs/rock.mp3" controls></audio>
             </div>
+
+            <div class="duracao">
+              <div class="barra">
+                <progress value="0.5" max="1"></progress>
+                <span class="ponto"></span>
+              </div>
+              <div class="tempo">
+                <span class="inicio">00:00</span>
+                <span class="fim">03:00</span>
+              </div>
+            </div>
+
+            <div class="botoes">
+              <button class=""><i class="fas fa-step-backward"></i></button>
+              <button class=""><i class="fas fa-circle-play"></i></button>
+              <button class=""><i class="fas fa-pause-circle"></i></button>
+              <button class=""><i class="fas fa-step-forward"></i></button>
+            </div>
+            <audio src="/src/audio/Journey - Dont Stop Believin.mp3" controls></audio>
+           
           </div>
         </div>
-      </section>
-      <img src="/src/images/rock.jpg" alt="images rock" />
+      </section>      
     </main>
+
     <footer class="footer">
       <p>
         &copy; <span id="anoAtual"></span> - MusicApp |
