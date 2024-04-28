@@ -6,7 +6,7 @@ Este é um projeto para criar uma aplicação de música semelhante ao Spotify, 
 
 ## Acesso à Página
 
-Você pode acessar a página do projeto no GitHub Pages [clicando aqui](link_do_seu_projeto_no_github_pages).
+Você pode acessar a página do projeto no GitHub Pages [clicando aqui](https://alancamposdev.github.io/music-app/).
 
 
 ## Estrutura de Pastas
