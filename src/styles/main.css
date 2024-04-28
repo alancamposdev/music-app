@@ -141,9 +141,12 @@ section {
   height: 20%;
 }
 
+.info-container p{  
+  font-style: italic;  
+}
+
 .player-container {
   height: 80%;
-  border: 1px solid gray;
 }
 
 
@@ -169,7 +172,7 @@ section {
 
 .player h3,
 .player p {
-  margin: 0;
+  margin-bottom: .5rem;
   text-align: center;
   color: #fff;
 }
@@ -183,16 +186,19 @@ section {
 }
 
 .player .barra {
+  display: flex;
   width: 100%;
-  height: 5px;
+  height: 6px;
   background-color: #535353;
-  border-radius: 2px;
+  border-radius: 3px;
   position: relative;
+  align-items: center;
 }
 
 .player progress {
-  width: 100%;
-  height: 5px;
+  width: 90%;
+  /*90% da barra*/
+  height: 6px;
   appearance: none;
   background-color: transparent;
 }
@@ -208,11 +214,11 @@ section {
 
 .player .ponto {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  left: -3px;
+  width: 15px;
+  height: 15px;
   background-color: var(--primary-color);
   border-radius: 50%;
-  top: -3px;
 }
 
 .player .tempo {
@@ -222,10 +228,17 @@ section {
   color: #b3b3b3;
 }
 
+.player .botoes {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .player .botoes button {
   background-color: transparent;
   border: none;
-  font-size: 24px;
+  font-size: 2rem;
   color: #fff;
   cursor: pointer;
 }
@@ -234,15 +247,24 @@ section {
   color: var(--primary-color);
 }
 
-.player .botoes .fa-pause-circle {
+.player .botoes .play {
+  font-size: 3rem;
+
+}
+
+.player .botoes .pause {
+  font-size: 3rem;
   display: none;
+}
+
+.player .botoes .setas {
+  font-size: 2rem;
 }
 
 .player audio {
   width: 100%;
   margin-top: 20px;
 }
-
 
 
 /* footer */
