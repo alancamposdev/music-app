@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/images/favicon.ico" type="image/x-icon" />
+    <!-- seo -->
+    <title>MusicApp</title>
+    <meta
+      name="description"
+      content="MusicApp é um aplicativo de música online"
+    />
+    <meta name="keywords" content="música, música online, música grátis" />
+    <meta name="author" content="Alan Campos" />
+    <!-- icons fontAwesome  e Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <!-- js -->
+    <script src="/src/scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>MusicApp</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section>
+          <div>
+            <i class="fas fa-music"></i>
+            <h2>Seja bem-vindo ao MusicApp</h2>
+            <p>Um aplicativo de música online</p>
+          </div>
+          <div class="player-container">
+            <div class="player">
+              <img src="/src/images/rock.jpg" alt="rock" />
+              <div>
+                <h3>Nome da música</h3>
+                <p>Nome do artista</p>
+                <div class="duracao">
+                  <div class="barra">
+                    <progress value="0.5" max="1"></progress>
+                    <span class="ponto"></span>
+                  </div>
+                  <div class="tempo">
+                    <span class="inicio">00:00</span>
+                    <span class="fim">03:00</span>
+                  </div>
+                </div>
+                <div class="botoes">
+                  <button class=""><i class="fas fa-step-backward"></i></button>
+                  <button class=""><i class="fas fa-circle-play"></i></button>
+                  <button class=""><i class="fas fa-step-forward"></i></button>
+                </div>
+                <audio src="/src/songs/rock.mp3" controls></audio>
+              </div>
+            </div>
+          </div>
+        </section>
+        <img src="src/images/rock.jpg" alt="images rock" />
+      </main>
+      <footer class="footer">
+        <p>&copy; <span id="anoAtual"></span> - MusicApp  | <a href="https://github.com/alancamposdev" target="_blank">AlanCampos</a></p>
+        <script>
+          const year = new Date().getFullYear();
+          const currentYear = document.querySelector("#anoAtual");
+          currentYear.textContent = year;
+        </script>
+      </footer>
+    </div>
+  </body>
+</html>

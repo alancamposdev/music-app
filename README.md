@@ -31,6 +31,13 @@ A estrutura de pastas do projeto é organizada da seguinte forma:
 
 ```
 
+## Tecnologias Utilizadas
+
+- [Font Awesome](https://fontawesome.com/): Biblioteca de ícones.
+- [Google Fonts](https://fonts.google.com/): Biblioteca de fontes.
+- [Áudio do YouTube](https://studio.youtube.com/channel/): Biblioteca de áudio do YouTube.
+- [Unsplash](https://unsplash.com/): Biblioteca de imagens gratuitas.
+
 ## Como Contribuir
 
 Se deseja contribuir com o projeto, siga estas etapas:
