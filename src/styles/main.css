@@ -141,8 +141,8 @@ section {
   height: 20%;
 }
 
-.info-container p{  
-  font-style: italic;  
+.info-container p {
+  font-style: italic;
 }
 
 .player-container {
@@ -196,11 +196,10 @@ section {
 }
 
 .player progress {
-  width: 90%;
-  /*90% da barra*/
+  width: 0%;
   height: 6px;
   appearance: none;
-  background-color: transparent;
+  background-color: var(--primary-color);
 }
 
 .player progress::-webkit-progress-bar {

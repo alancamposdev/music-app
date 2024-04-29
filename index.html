@@ -65,12 +65,12 @@
 
               <div class="duracao">
                 <div class="barra">
-                  <progress value="1" max="1"></progress>
+                  <progress value="0" max="1"></progress>
                   <span class="ponto"></span>
                 </div>
                 <div class="tempo">
                   <span class="inicio">00:00</span>
-                  <span class="fim">03:00</span>
+                  <span class="fim"></span>
                 </div>
               </div>
 
@@ -78,17 +78,22 @@
                 <button class="setas">
                   <i class="fas fa-step-backward"></i>
                 </button>
-                <button class="play">
-                  <i class="fas fa-circle-play play"></i>
+                <button class="play" id="play">
+                  <i class="fas fa-circle-play"></i>
                 </button>
-                <button class="pause">
-                  <i class="fas fa-pause-circle pause"></i>
+                <button class="pause" id="pause">
+                  <i class="fas fa-pause-circle"></i>
                 </button>
                 <button class="setas">
                   <i class="fas fa-step-forward"></i>
                 </button>
               </div>
-              <audio src="/src/audio/Journey - Dont Stop Believin.mp3"></audio>
+              <audio
+                id="musica"
+                src="/src/audio/Journey - Dont Stop Believin.mp3"
+              >
+                Seu navegador não suporta o elemento <code>audio</code>.
+              </audio>
             </div>
           </div>
         </section>
